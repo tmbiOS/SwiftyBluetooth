@@ -52,6 +52,10 @@ public final class Peripheral {
     init(peripheral: CBPeripheral) {
         self.peripheralProxy = PeripheralProxy(cbPeripheral: peripheral, peripheral: self)
     }
+  
+    public var cbPeripheral: CBPeripheral {
+        return peripheralProxy.cbPeripheral
+    }
 }
 
 // MARK: Public
