@@ -49,7 +49,7 @@ extension UInt16 {
     }
 }
 
-extension Result {
+public extension Result {
     var value: Success? {
         return try? self.get()
     }
